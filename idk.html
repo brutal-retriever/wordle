@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Wordle Game</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Wordle, <span id="player-name"></span></h1>
+        <p class="info">The secret word has <span id="word-length"></span> letters. You have <span id="attempts-left"></span> attempts.</p>
+        <div class="word-display" id="word-display"></div>
+        <form id="guess-form">
+            <label for="guess">Guess a letter:</label>
+            <input type="text" id="guess" name="guess" maxlength="1" required>
+            <button type="submit">Guess</button>
+        </form>
+        <p id="message" class="message"></p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
